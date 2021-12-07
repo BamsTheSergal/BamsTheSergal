@@ -102,7 +102,7 @@
       $callbacks = {}
       constructor(url, header) {
         if (localStorage.timeout != 20) {
-          window.toastr.warning('INFO: XMAS update made bots worse. Please highen your timeout to Pixel/100ms. <br><button onclick="localStorage.timeout = 100;">Set timeout</button>')
+          window.toastr.warning('INFO: XMAS update made bots worse. Please highen your timeout to Pixel/20ms. <br><button onclick="localStorage.timeout = 20;">Set timeout</button>')
         }
         super(url, header);
         this.addEventListener('message',message => {
